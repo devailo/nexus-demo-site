@@ -2,7 +2,7 @@ import "./Main.css"
  import {Card} from "./Card/Card"
 
 
-export const Main = () => {
+export const Main = ({products}) => {
     return (
         <section className="main-container">
             <div className="filter-container">

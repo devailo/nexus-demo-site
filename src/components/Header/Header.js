@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom"
 import Logo from '../../images/nexus.png'
 
-export const Header = () => {
+export const Header = ({handleLinkClick}) => {
     return (
         <header>
             <nav className="navi">
@@ -9,9 +8,9 @@ export const Header = () => {
                     <img src={Logo} alt="nexus logo" />
                 </div>
                 <div className="buttons">
-                    <Link to="/">Laptops</Link>
-                    <Link to="/phones">Phones</Link>
-                    <Link to="/tablets">Tablets</Link>
+                    <button onClick={() => handleLinkClick('laptops')}>Laptops</button>
+                    <button onClick={() => handleLinkClick('phones')}>Phones</button>
+                    <button onClick={() => handleLinkClick('tablets')}>Tablets</button>
                 </div>
             </nav>
         </header>

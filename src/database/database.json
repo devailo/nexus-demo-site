@@ -1,6 +1,7 @@
 {
     "laptops": [
         {
+            "_id": "1",
             "imageUrl": "",
             "brand": "Asus",
             "model": "LP150",
@@ -9,6 +10,7 @@
             "rating": 5
         },
         {
+            "_id": "2",
             "imageUrl": "",
             "brand": "Toshiba",
             "model": "Satellite A150",
@@ -19,6 +21,7 @@
     ],
     "phones": [
         {
+            "_id": "1",
             "imageUrl": "",
             "brand": "samsung",
             "model": "S21+",
@@ -29,6 +32,7 @@
     ],
     "tablets": [
         {
+            "_id": "1",
             "imageUrl": "",
             "brand": "samsung",
             "model": "galaxy tab 9",

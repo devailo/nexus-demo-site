@@ -1,23 +1,27 @@
-import { Routes, Route } from "react-router-dom";
+import { useState } from "react";
+
 import categories from "./database/database.json"
 
 import { Footer } from "./components/Footer/Footer";
-import { Header } from "./components/Header/Header";
-
 import { Main } from "./components/Main/Main";
+import { Header } from "./components/Header/Header";
 
 import './App.css';
 
-console.log(categories);
-
 function App() {
+
+  const [selectedCategory, setSelectedCategory] = useState('laptops')
+
+  const handleLinkClick = (category) => {
+    setSelectedCategory(category)
+  }
+
+
   return (
     <div className="App">
-      <Header />
+      <Header handleLinkClick={handleLinkClick} />
       <main id="main">
-        <Routes>
-          <Route path="/" element={<Main />} />
-        </Routes>
+        <Main products={categories[selectedCategory]} />
       </main>
       <Footer />
     </div>
