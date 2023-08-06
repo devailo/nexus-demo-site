@@ -1,12 +1,14 @@
 import { Routes, Route } from "react-router-dom";
+import categories from "./database/database.json"
 
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
-import { Laptops } from "./components/Laptops/Laptops";
-import { Phones } from "./components/Phones/Phones";
-import { Tablets } from "./components/Tablets/Tablets";
+
+import { Main } from "./components/Main/Main";
 
 import './App.css';
+
+console.log(categories);
 
 function App() {
   return (
@@ -14,9 +16,7 @@ function App() {
       <Header />
       <main id="main">
         <Routes>
-          <Route path="/" element={<Laptops />} />
-          <Route path="/phones" element={<Phones />} />
-          <Route path="/tablets" element={<Tablets />} />
+          <Route path="/" element={<Main />} />
         </Routes>
       </main>
       <Footer />

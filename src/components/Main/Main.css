@@ -1,0 +1,92 @@
+.main-container{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-around;
+}
+
+.filter-container {
+    background-color: aqua;
+    height: 100%;
+
+}
+
+.main-header{
+    background-color: brown;
+}
+
+.card-grid{
+    background-color: cornflowerblue;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin: 15px;
+    overflow: hidden;
+    width: 600px auto;
+    min-height: 210px;
+    height: auto;
+}
+
+.card-info {
+    padding: 30px;
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card>img {
+    /* margin-top: -10px; */
+    height: auto;
+    width: 180px;
+    top: 10px;
+    right: 10px;
+    float: right;
+    padding: 5px;
+}
+
+.card-info>h1 {
+    flex: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 32px;
+    font-weight: 750;
+    color: #161618;
+}
+
+
+.card-info>h2 {
+    flex: 1;
+    border: 2px solid  #9c9c9c;
+
+    font-size: 14px;
+    border-radius: 12px;
+    padding: 12px;
+    font-weight: 750;
+    color: #000000;
+}
+
+.cart-button {
+    flex: 1;
+    border: 2px solid  #4399f6;
+    border-radius: 12px;
+
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 10px;
+    transition: 0.5s;
+
+}
+
+.cart-button:hover {
+    color: white;
+    background-color: #4399f6;
+}

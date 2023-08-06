@@ -1,0 +1,40 @@
+{
+    "laptops": [
+        {
+            "imageUrl": "",
+            "brand": "Asus",
+            "model": "LP150",
+            "description": "Intel i9, RTX4090, 1TB SSD",
+            "price": 1500,
+            "rating": 5
+        },
+        {
+            "imageUrl": "",
+            "brand": "Toshiba",
+            "model": "Satellite A150",
+            "description": "Intel pentium 4, GT 560, 1TB HDD",
+            "price": 900,
+            "rating": 4
+        }
+    ],
+    "phones": [
+        {
+            "imageUrl": "",
+            "brand": "samsung",
+            "model": "S21+",
+            "description": "UHD, 8gb Ram, 5000 mAh",
+            "price": 2200,
+            "rating": 5
+        }
+    ],
+    "tablets": [
+        {
+            "imageUrl": "",
+            "brand": "samsung",
+            "model": "galaxy tab 9",
+            "description": "UHD, 8gb Ram, 9000 mAh",
+            "price": 1800,
+            "rating": 4
+        }
+    ]
+}
