@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <Header handleLinkClick={handleLinkClick} />
       <main id="main">
-        <Main products={categories[selectedCategory]} />
+        <Main products={categories[selectedCategory]} categoryName={selectedCategory} />
       </main>
       <Footer />
     </div>

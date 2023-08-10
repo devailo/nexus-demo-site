@@ -2,30 +2,93 @@
     "laptops": [
         {
             "_id": "1",
-            "imageUrl": "",
+            "imageUrl": "https://s13emagst.akamaized.net/products/45133/45132600/images/res_21138d562e7fcf6ce0198a471faef456.jpg",
             "brand": "Asus",
             "model": "LP150",
             "description": "Intel i9, RTX4090, 1TB SSD",
             "price": 1500,
+            "discounted": false,
             "rating": 5
         },
         {
             "_id": "2",
-            "imageUrl": "",
+            "imageUrl": "https://www.technopolis.bg/medias/sys_master/h60/h10/11459448406046.jpg",
             "brand": "Toshiba",
             "model": "Satellite A150",
             "description": "Intel pentium 4, GT 560, 1TB HDD",
             "price": 900,
+            "discounted": true,
             "rating": 4
-        }
+        },
+        {
+            "_id": "3",
+            "imageUrl": "https://s13emagst.akamaized.net/products/45133/45132600/images/res_21138d562e7fcf6ce0198a471faef456.jpg",
+            "brand": "Asus",
+            "model": "LP150x",
+            "description": "Intel i7, GT390, 512GB HDD",
+            "price": 1000,
+            "discounted": false,
+            "rating": 5
+        },
+        {
+            "_id": 4,
+            "imageUrl": "https://ardes.bg/uploads/original/dell-xps-13-9300-271941.jpg",
+            "brand": "Dell",
+            "model": "XPS 13",
+            "description": "Intel Core i7, Intel Iris Xe, 512GB SSD",
+            "price": 1499,
+            "discounted": true,
+            "rating": 4.5
+          },
+          {
+            "_id": 5,
+            "imageUrl": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08277657.png",
+            "brand": "HP",
+            "model": "Spectre x360",
+            "description": "Intel Core i5, Intel Iris Xe, 256GB SSD",
+            "price": 1099,
+            "discounted": false,
+            "rating": 2.7
+          },
+          {
+            "_id": 6,
+            "imageUrl": "https://p1.akcdn.net/full/839959281.lenovo-thinkpad-x1-carbon-20xw007xbm.jpg",
+            "brand": "Lenovo",
+            "model": "ThinkPad X1 Carbon",
+            "description": "Intel Core i7, Intel Iris Xe, 1TB SSD",
+            "price": 1699,
+            "discounted": true,
+            "rating": 4.7
+          },
+          {
+            "_id": 7,
+            "imageUrl": "https://laptop.bg/system/images/396758/original/asus_zenbook_14_um3402yarkp511w.jpg",
+            "brand": "Asus",
+            "model": "ZenBook 14",
+            "description": "AMD Ryzen 7, NVIDIA MX350, 512GB SSD",
+            "price": 1299,
+            "discounted": false,
+            "rating": 4.2
+          },
+          {
+            "_id": 8,
+            "imageUrl": "https://pcmall.bg/products/89220_1.jpg",
+            "brand": "Acer",
+            "model": "Swift 5",
+            "description": "Intel Core i5, Intel Iris Xe, 256GB SSD",
+            "price": 899,
+            "discounted": true,
+            "rating": 4.0
+          }
     ],
     "phones": [
         {
             "_id": "1",
-            "imageUrl": "",
+            "imageUrl": "https://cdn.dxomark.com/wp-content/uploads/medias/post-75482/SamsungGalaxys215gplus.jpg",
             "brand": "samsung",
             "model": "S21+",
             "description": "UHD, 8gb Ram, 5000 mAh",
+            "discounted": false,
             "price": 2200,
             "rating": 5
         }
@@ -33,10 +96,11 @@
     "tablets": [
         {
             "_id": "1",
-            "imageUrl": "",
+            "imageUrl": "https://p1.akcdn.net/full/320937837.samsung-t555-galaxy-tab-a-9-7-lte-16gb.jpg",
             "brand": "samsung",
             "model": "galaxy tab 9",
             "description": "UHD, 8gb Ram, 9000 mAh",
+            "discounted": true,
             "price": 1800,
             "rating": 4
         }

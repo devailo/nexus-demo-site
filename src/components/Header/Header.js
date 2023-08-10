@@ -1,8 +1,10 @@
+import "./Header.css"
+
 import Logo from '../../images/nexus.png'
 
 export const Header = ({handleLinkClick}) => {
     return (
-        <header>
+        <header className="header">
             <nav className="navi">
                 <div className="logo">
                     <img src={Logo} alt="nexus logo" />

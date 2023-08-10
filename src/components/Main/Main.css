@@ -1,88 +1,244 @@
-.main-container{
+.main-container {
+    width: 80%;
+    height: 100vh;
+    padding-top: 50px;
+    margin: auto;
     display: flex;
     flex-direction: row;
-    width: auto;
     justify-content: space-around;
 }
 
 .filter-container {
-    background-color: aqua;
-    height: 100%;
-
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 15%;
+    margin: 10px 5px 10px 5px;
+    /* min-height: 50%; */
+    height: fit-content;
 }
 
-.main-header{
-    background-color: brown;
+
+.filter-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
 }
 
-.card-grid{
-    background-color: cornflowerblue;
+.filter-group {
+    margin-left: 24px;
+    text-align: left;
+    margin-top: 24px;
+}
+
+.filter-group ul {
+    margin-left: 0;
+    text-align: left;
+}
+
+.form-check {
+    list-style: none;
+    text-align: left;
+}
+
+.form-check ul li {
+    list-style: none;
+}
+
+.form-check label {
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.form-check label:hover {
+    text-decoration: underline;
+}
+
+
+
+.main-header {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 5px 10px 5px;
+    padding: 0px 20px;
+}
+
+.sort-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+select {
+    margin-left: 8px;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    font: inherit;
+    width: auto;
+    height: 28px;
+    color: black;
+    cursor: pointer;
+}
+
+
+.page-container {
+    width: 85%;
+}
+
+.card-grid {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: wrap;
+    margin: 5px 5px 5px 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
 
 .card {
     background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    max-width: 100%;
-    margin: 15px;
+    /* max-width: 100%;  */
+    margin: 15px 10px 15px 10px;
     overflow: hidden;
-    width: 600px auto;
-    min-height: 210px;
+    width: 23%;
+    max-height: 400px;
     height: auto;
 }
 
+.img-container {
+    height: 40%;
+    /* max-width: 100%; */
+    /* object-fit: cover; */
+    /* overflow: hidden; */
+}
+
+
+.img-container img {
+    /* margin-top: -10px; */
+    object-fit: contain;
+
+    height: auto;
+    width: auto;
+    /* float: right; */
+    /* overflow: hidden; */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
 .card-info {
-    padding: 30px;
+    /* padding: 30px; */
+    margin-top: 30px;
+
+    /* padding-right: 10px; */
     position: relative;
-    width: 100%;
-    display: inline-flex;
+    width: 90%;
+    height: 60%;
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
-.card>img {
-    /* margin-top: -10px; */
-    height: auto;
-    width: 180px;
-    top: 10px;
-    right: 10px;
-    float: right;
-    padding: 5px;
-}
-
-.card-info>h1 {
+.card-info-text>h2 {
     flex: 1;
+    text-align: left;
+
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 750;
     color: #161618;
 }
 
+.card-info-text>p {
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: left;
+}
 
-.card-info>h2 {
+/* StarRating.css */
+.star-rating {
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+  
+  .star {
+    color: #FFD700; /* Golden yellow color */
+  }
+  
+  .half-star {
+    position: relative;
+    display: inline-block;
+    color: #ccc; /* Light gray color */
+
+  }
+  
+  .half-star::before {
+    content: "\2605"; /* Unicode star character */
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
+    color: #FFD700; /* Golden yellow color */
+  }
+  
+  .empty-star {
+    color: #ccc; /* Light gray color */
+  }
+  
+  
+  
+  
+
+.card-info-buy {
+    width: 100%;
+}
+
+
+.final-price {
     flex: 1;
-    border: 2px solid  #9c9c9c;
+    font-size: 18px;
+    text-align: left;
 
-    font-size: 14px;
-    border-radius: 12px;
-    padding: 12px;
-    font-weight: 750;
-    color: #000000;
+    margin-bottom: 5px;
+    font-weight: 1750;
+    color: #ff0000;
+}
+
+.price {
+    font-size: 12px;
+    text-align: left;
+
+    color: #c8c8c8;
+    text-decoration: line-through;
 }
 
 .cart-button {
     flex: 1;
-    border: 2px solid  #4399f6;
-    border-radius: 12px;
-
+    margin-bottom: 15px;
+    display: inline;
+    border: 2px solid #4399f6;
+    border-radius: 10px;
+    align-self: center;
+    height: 35px;
+    width: 100%;
     color: #000000;
     font-size: 20px;
-    letter-spacing: 1px;
-    padding: 10px;
+    /* letter-spacing: 1px; */
+    /* padding: 10px; */
     transition: 0.5s;
+    cursor: pointer;
 
 }
 
