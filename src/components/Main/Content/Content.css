@@ -1,0 +1,27 @@
+.content-header {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 5px 10px 5px;
+    padding: 0px 20px;
+}
+
+.sort-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+select {
+    margin-left: 8px;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    font: inherit;
+    width: auto;
+    height: 28px;
+    color: black;
+    cursor: pointer;
+}

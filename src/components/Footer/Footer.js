@@ -5,13 +5,13 @@ import Logo from '../../images/nexus.png'
 
 export const Footer = () => {
     return (
-        <footer class="footer">
-            <div class="footer-logo">
+        <footer className="footer">
+            <div className="footer-logo">
                 <img src={Logo} alt="nexus logo" />
 
             </div>
-            <div class="footer-links">
-                <div class="footer-column">
+            <div className="footer-links">
+                <div className="footer-column">
                     <ul>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/">Laptops</Link></li>
@@ -19,7 +19,7 @@ export const Footer = () => {
                         <li><Link to="/tablets">Tablets</Link></li>
                     </ul>
                 </div>
-                <div class="footer-column">
+                <div className="footer-column">
                     <ul>
                         <li><Link to="#">About us</Link></li>
                         <li><Link to="#">FAQ</Link></li>
@@ -28,12 +28,12 @@ export const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div class="footer-social">
+            <div className="footer-social">
                 <h4>Follow us on</h4>
-                <div class="social-links">
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
+                <div className="social-links">
+                    <i className="fab fa-instagram"></i>
+                    <i className="fab fa-facebook-f"></i>
+                    <i className="fab fa-twitter"></i>
                 </div>
             </div>
         </footer>

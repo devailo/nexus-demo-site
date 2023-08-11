@@ -91,7 +91,17 @@
             "discounted": false,
             "price": 2200,
             "rating": 5
-        }
+        },
+        {
+          "_id": "1",
+          "imageUrl": "https://cdn.dxomark.com/wp-content/uploads/medias/post-75482/SamsungGalaxys215gplus.jpg",
+          "brand": "samsung",
+          "model": "S21+",
+          "description": "UHD, 8gb Ram, 5000 mAh",
+          "discounted": false,
+          "price": 2200,
+          "rating": 5
+      }
     ],
     "tablets": [
         {

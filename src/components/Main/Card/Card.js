@@ -1,5 +1,5 @@
-
-import "../../Main/Main.css"
+import { useState } from "react";
+import "./Card.css"
 
 export const Card = ({
     _id,
@@ -16,21 +16,26 @@ export const Card = ({
         const stars = [];
         const fullStars = Math.floor(rating);
         const hasHalfStar = rating % 1 !== 0;
-    
+
         for (let i = 0; i < fullStars; i++) {
-          stars.push(<span key={i} className="star">&#9733;</span>);
+            stars.push(<span key={i} className="star">&#9733;</span>);
         }
-    
+
         if (hasHalfStar) {
-          stars.push(<span key="half" className="half-star">&#9733;</span>);
+            stars.push(<span key="half" className="half-star">&#9734;</span>);
         }
-    
+
         while (stars.length < 5) {
-          stars.push(<span key={stars.length} className="empty-star">&#9734;</span>);
+            stars.push(<span key={stars.length} className="empty-star">&#9734;</span>);
         }
-    
+
         return stars;
-      };
+    };
+
+
+    const [isOpen, setIsOpen] = useState(false)
+
+
 
     return (
         <div className="card">
@@ -52,9 +57,20 @@ export const Card = ({
                     ) : (
                         <h3 className="final-price">{price} BGN</h3>
                     )}
-                    <button className="cart-button">Add to cart</button>
+                    <button className="cart-button" onClick={() => setIsOpen(true)}>Add to cart</button>
                 </div>
             </div>
+            {isOpen && (<>
+                <div id="page-mask">
+
+                    <div className="popup">
+                        <p>Product added to cart!</p>
+                        <span className="pop-button" onClick={() => setIsOpen(false)}>OK</span>
+                    </div>
+                </div>
+            </>
+            )}
+
         </div>
     )
 }

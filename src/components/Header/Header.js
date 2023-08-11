@@ -2,7 +2,10 @@ import "./Header.css"
 
 import Logo from '../../images/nexus.png'
 
-export const Header = ({handleLinkClick}) => {
+export const Header = ({onCategoryChange}) => {
+    const handleCategoryClick = (category) => {
+        onCategoryChange(category)
+    }
     return (
         <header className="header">
             <nav className="navi">
@@ -10,9 +13,9 @@ export const Header = ({handleLinkClick}) => {
                     <img src={Logo} alt="nexus logo" />
                 </div>
                 <div className="buttons">
-                    <button onClick={() => handleLinkClick('laptops')}>Laptops</button>
-                    <button onClick={() => handleLinkClick('phones')}>Phones</button>
-                    <button onClick={() => handleLinkClick('tablets')}>Tablets</button>
+                    <button onClick={() => handleCategoryClick('laptops')}>Laptops</button>
+                    <button onClick={() => handleCategoryClick('phones')}>Phones</button>
+                    <button onClick={() => handleCategoryClick('tablets')}>Tablets</button>
                 </div>
             </nav>
         </header>

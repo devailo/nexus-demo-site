@@ -9,19 +9,18 @@ import { Header } from "./components/Header/Header";
 import './App.css';
 
 function App() {
+  
+  const [activeCategory, setActiveCategory] = useState('laptops')
 
-  const [selectedCategory, setSelectedCategory] = useState('laptops')
-
-  const handleLinkClick = (category) => {
-    setSelectedCategory(category)
+  const handleCategoryChange = (category) => {
+      setActiveCategory(category)
   }
-
 
   return (
     <div className="App">
-      <Header handleLinkClick={handleLinkClick} />
+      <Header onCategoryChange={handleCategoryChange} />
       <main id="main">
-        <Main products={categories[selectedCategory]} categoryName={selectedCategory} />
+        <Main key={activeCategory} allCategories={categories} activeCategory={activeCategory} />
       </main>
       <Footer />
     </div>
