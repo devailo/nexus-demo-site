@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Filters.css"
 
 export const Filters = ({ brands, prices }) => {
@@ -26,6 +27,14 @@ export const Filters = ({ brands, prices }) => {
 
     const filterPrices = generateAdjustedPrices(prices);
 
+    const [checked, setChecked] = useState(false)
+
+    const handleChange = () => {
+        setChecked(!checked)
+    }
+
+    console.log(checked);
+
     return (
         <div className="filter-content">
             <div className="filter-group">
@@ -33,8 +42,8 @@ export const Filters = ({ brands, prices }) => {
                 <ul>
                     {brands.map((brand, i) =>
                         <li className="form-check" key={i}>
-                            <input type="checkbox" name={brand} id={brand} />
-                            <label htmlFor={brand}>{brand[0]} ({brand[1]})</label>
+                            <input type="checkbox" checked={checked} onChange={handleChange} name={brand[0]} id={brand[0]} />
+                            <label htmlFor={brand[0]}>{brand[0]} ({brand[1]})</label>
                         </li>
                     )}
                 </ul>

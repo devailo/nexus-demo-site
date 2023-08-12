@@ -9,7 +9,7 @@ import { Content } from "./Content/Content"
 import { sortProducts } from "../../utils/sortingUtil"
 
 
-export const Main = ({ allCategories, activeCategory}) => {
+export const Main = ({ allCategories, activeCategory }) => {
 
 
     const selectedCategoryProducts = allCategories[activeCategory]
@@ -30,10 +30,16 @@ export const Main = ({ allCategories, activeCategory}) => {
     const handleSortChange = (selectedSortOption) => {
         const sortedProducts = sortProducts(products, selectedSortOption)
         setProducts(sortedProducts)
-        
+
     }
 
-  
+    const defaultProductsShown = 4
+
+    const [shownProducts, setLoadMore] = useState(defaultProductsShown)
+
+    const handleMoreProducts = () => {
+        setLoadMore(shownProducts + defaultProductsShown)
+    }
 
     console.log(products);
 
@@ -45,7 +51,10 @@ export const Main = ({ allCategories, activeCategory}) => {
             <div className="content-container">
                 <Content products={products} categoryName={activeCategory} onSortChange={handleSortChange} />
                 <div className="card-grid">
-                    {products.map((product) => <Card {...product} key={product._id} />)}
+                    {products.slice(0, shownProducts).map((product) => <Card {...product} key={product._id} />)}
+                    {shownProducts < products.length && (
+                        <button className="load-more-btn" onClick={handleMoreProducts}>Load More Products</button>
+                    )}
                 </div>
             </div>
         </section>
