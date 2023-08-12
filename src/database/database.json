@@ -79,6 +79,16 @@
             "price": 899,
             "discounted": true,
             "rating": 4.0
+          },
+          {
+            "_id": 9,
+            "imageUrl": "https://pcmall.bg/products/89220_1.jpg",
+            "brand": "Acer",
+            "model": "Swift 6",
+            "description": "Intel Core i7, Intel Iris Xe, 256GB SSD",
+            "price": 1269,
+            "discounted": true,
+            "rating": 4.2
           }
     ],
     "phones": [
@@ -93,14 +103,14 @@
             "rating": 5
         },
         {
-          "_id": "1",
+          "_id": "2",
           "imageUrl": "https://cdn.dxomark.com/wp-content/uploads/medias/post-75482/SamsungGalaxys215gplus.jpg",
           "brand": "samsung",
-          "model": "S21+",
-          "description": "UHD, 8gb Ram, 5000 mAh",
+          "model": "S21",
+          "description": "UHD, 6gb Ram, 5000 mAh",
           "discounted": false,
-          "price": 2200,
-          "rating": 5
+          "price": 1800,
+          "rating": 4
       }
     ],
     "tablets": [

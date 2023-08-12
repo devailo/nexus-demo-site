@@ -8,9 +8,7 @@ import { Content } from "./Content/Content"
 
 import { sortProducts } from "../../utils/sortingUtil"
 
-
 export const Main = ({ allCategories, activeCategory }) => {
-
 
     const selectedCategoryProducts = allCategories[activeCategory]
 
@@ -33,6 +31,46 @@ export const Main = ({ allCategories, activeCategory }) => {
 
     }
 
+    // filtering functionality
+    const [selectedBrands, setSelectedBrands] = useState([])
+    const [selectedPrices, setSelectedPrices] = useState([])
+    const [selectedRatings, setSelectedRatings] = useState([])
+
+    const handleBrandCheckboxChange = (brand) => {
+        if (selectedBrands.includes(brand)) {
+            setSelectedBrands(selectedBrands.filter(selectedBrand => selectedBrand !== brand))
+        } else {
+            setSelectedBrands([...selectedBrands, brand])
+        }
+    }
+
+    const handlePriceCheckboxChange = (price) => {
+        if (selectedPrices.includes(price)) {
+            setSelectedPrices(selectedPrices.filter(selectedPrice => selectedPrice !== price))
+        } else {
+            setSelectedPrices([...selectedPrices, price])
+        }
+    }
+
+    const handleRatingCheckboxChange = (rating) => {
+        if (selectedRatings.includes(rating)) {
+            setSelectedRatings(selectedRatings.filter(selectedRating => selectedRating !== rating))
+        } else {
+            setSelectedRatings([...selectedRatings, rating])
+        }
+    }
+
+    const filterProducts = (product) => {
+        const brandFilter = selectedBrands.length === 0 || selectedBrands.includes(product.brand)
+        const priceFilter = selectedPrices.length === 0 || (product.discounted ? product.price * 0.8 : product.price) >= Math.min(...selectedPrices)
+        const ratingFilter = selectedRatings.length === 0 || product.rating >= Math.min(...selectedRatings)
+
+        return brandFilter && priceFilter && ratingFilter
+    }
+
+    const filteredProducts = products.filter(filterProducts)
+
+    // show more functionality
     const defaultProductsShown = 4
 
     const [shownProducts, setLoadMore] = useState(defaultProductsShown)
@@ -41,18 +79,31 @@ export const Main = ({ allCategories, activeCategory }) => {
         setLoadMore(shownProducts + defaultProductsShown)
     }
 
-    console.log(products);
+    let shownNumber = false 
+
+    if (shownProducts < filteredProducts.length) {
+        shownNumber = true
+    }
 
     return (
         <section className="main-container">
             <div className="filter-container">
-                <Filters brands={brands} prices={prices} />
+                <Filters brands={brands}
+                    prices={prices}
+                    selectedBrands={selectedBrands}
+                    handleBrandCheckboxChange={handleBrandCheckboxChange}
+                    selectedPrices={selectedPrices}
+                    handlePriceCheckboxChange={handlePriceCheckboxChange}
+                    selectedRatings={selectedRatings}
+                    handleRatingCheckboxChange={handleRatingCheckboxChange} />
             </div>
             <div className="content-container">
-                <Content products={products} categoryName={activeCategory} onSortChange={handleSortChange} />
+                <Content products={products} filteredProducts={filteredProducts} shownNumber={shownNumber} shownProducts={shownProducts} categoryName={activeCategory} onSortChange={handleSortChange} />
                 <div className="card-grid">
-                    {products.slice(0, shownProducts).map((product) => <Card {...product} key={product._id} />)}
-                    {shownProducts < products.length && (
+                    {filteredProducts
+                        .slice(0, shownProducts)
+                        .map((product) => <Card {...product} key={product._id} />)}
+                    {shownProducts < filteredProducts.length && (
                         <button className="load-more-btn" onClick={handleMoreProducts}>Load More Products</button>
                     )}
                 </div>

@@ -1,10 +1,16 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "./Filters.css"
 
-export const Filters = ({ brands, prices }) => {
-
-
-    console.log(prices);
+export const Filters = ({
+    brands,
+    prices,
+    selectedBrands,
+    handleBrandCheckboxChange,
+    selectedPrices,
+    handlePriceCheckboxChange,
+    selectedRatings,
+    handleRatingCheckboxChange
+}) => {
 
     function generateAdjustedPrices(prices) {
         if (prices.length === 0) {
@@ -27,14 +33,6 @@ export const Filters = ({ brands, prices }) => {
 
     const filterPrices = generateAdjustedPrices(prices);
 
-    const [checked, setChecked] = useState(false)
-
-    const handleChange = () => {
-        setChecked(!checked)
-    }
-
-    console.log(checked);
-
     return (
         <div className="filter-content">
             <div className="filter-group">
@@ -42,7 +40,12 @@ export const Filters = ({ brands, prices }) => {
                 <ul>
                     {brands.map((brand, i) =>
                         <li className="form-check" key={i}>
-                            <input type="checkbox" checked={checked} onChange={handleChange} name={brand[0]} id={brand[0]} />
+                            <input type="checkbox"
+                                name={brand[0]}
+                                id={brand[0]}
+                                checked={selectedBrands.includes(brand[0])}
+                                onChange={() => handleBrandCheckboxChange(brand[0])}
+                            />
                             <label htmlFor={brand[0]}>{brand[0]} ({brand[1]})</label>
                         </li>
                     )}
@@ -53,7 +56,12 @@ export const Filters = ({ brands, prices }) => {
                 <ul>
                     {filterPrices.map((price, i) =>
                         <li className="form-check" key={i}>
-                            <input type="checkbox" name={price} id={price} />
+                            <input type="checkbox"
+                                name={price}
+                                id={price}
+                                checked={selectedPrices.includes(price)}
+                                onChange={() => handlePriceCheckboxChange(price)}
+                            />
                             <label htmlFor={price}>{price} BGN</label>
                         </li>)}
                 </ul>
@@ -61,7 +69,18 @@ export const Filters = ({ brands, prices }) => {
             <div className="filter-group">
                 <h5>Rating above</h5>
                 <ul>
-                    <li className="form-check">
+                    {[5, 4, 3, 2, 1].map((rating) => (
+                        <li className="form-check" key={rating}>
+                            <input type="checkbox"
+                                name={rating + " stars"}
+                                id={rating + " stars"} 
+                                checked={selectedRatings.includes(rating)}
+                                onChange={() => handleRatingCheckboxChange(rating)}
+                                />
+                            <label htmlFor={rating + " stars"}>{rating + " stars"}</label>
+                        </li>
+                    ))}
+                    {/* <li className="form-check">
                         <input type="checkbox" name="5 stars" id="5 stars" />
                         <label htmlFor="5 stars">5 stars</label>
                     </li>
@@ -80,7 +99,7 @@ export const Filters = ({ brands, prices }) => {
                     <li className="form-check">
                         <input type="checkbox" name="1 stars" id="1 stars" />
                         <label htmlFor="1 stars">1 stars</label>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </div>

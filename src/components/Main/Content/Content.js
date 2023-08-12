@@ -1,6 +1,6 @@
 import "./Content.css"
 
-export const Content = ({ products, categoryName, onSortChange }) => {
+export const Content = ({ products, filteredProducts, shownNumber, shownProducts, categoryName, onSortChange }) => {
 
     const handleOptionChange = (event) => {
         const selectedSortOption = event.target.value
@@ -9,7 +9,7 @@ export const Content = ({ products, categoryName, onSortChange }) => {
 
     return (
         <div className="content-header">
-            <p className="counter">{products.length} of {products.length} products</p>
+            <p className="counter">{shownNumber ? shownProducts : filteredProducts.length} of {products.length} products</p>
             <p>Take a look of our selection of {categoryName}</p>
             <div className="sort-container">
                 <label htmlFor="sortOptions">Sort by:</label>
