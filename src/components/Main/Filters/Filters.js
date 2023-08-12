@@ -33,14 +33,6 @@ export const Filters = ({
 
     const filterPrices = generateAdjustedPrices(prices);
 
-    const [checked, setChecked] = useState(false)
-
-    const handleChange = () => {
-        setChecked(!checked)
-    }
-
-    console.log(checked);
-
     return (
         <div className="filter-content">
             <div className="filter-group">
