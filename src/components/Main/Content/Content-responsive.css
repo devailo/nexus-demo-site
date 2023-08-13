@@ -13,10 +13,32 @@
 
     .content-header {
         height: auto;
+        padding: 6px 12px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .category-name p{
+        display: none;
+    }
+
+    .category-name h2{
+        font-size: 18px;
     }
 
     .card{
-        width:45%
+        width:43%
+    }
+
+    select {
+        margin-left: 8px;
+        border: 1px solid #c8c8c8;
+        border-radius: 4px;
+        font: inherit;
+        width: 90%;
+        height: 28px;
+        color: black;
+        cursor: pointer;
     }
 }
 

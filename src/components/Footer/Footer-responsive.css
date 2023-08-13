@@ -1,0 +1,24 @@
+@media (max-width: 1024px) {
+
+    .footer{
+        flex-direction: column;
+        height: 440px;
+
+    }
+
+    .footer-social h4 {
+        font-size: 24px;
+        font-weight: 100;
+        margin-bottom: 10px;
+      }
+      
+      .social-links {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      
+      .social-links i {
+        font-size: 30px;
+      }
+}

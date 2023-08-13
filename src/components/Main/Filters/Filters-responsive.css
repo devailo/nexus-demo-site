@@ -11,15 +11,22 @@
     }
 
     .filter-group{
+        flex: 1;
         margin-top: 16px;
+        margin-left: 6px;
     }
 
     .filter-group ul{
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
     }
 
     .form-check{
-        margin-right: 12px;
+        margin-right: 2px;
+    }
+
+    .sort-container label{
+        display: none;
     }
 }

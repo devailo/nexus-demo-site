@@ -17,7 +17,7 @@ export const Header = ({ onCategoryChange }) => {
                     </a>
                 </div>
                 <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <label htmlFor="checkbox_toggle" className="hamburger">&#9776;</label>
                 <div className="buttons" id="buttons">
                     <button onClick={() => handleCategoryClick('laptops')}>Laptops</button>
                     <button onClick={() => handleCategoryClick('phones')}>Phones</button>
