@@ -1,5 +1,6 @@
 // import { useState } from "react";
 import "./Filters.css"
+import "./Filters-responsive.css"
 
 export const Filters = ({
     brands,
@@ -12,6 +13,7 @@ export const Filters = ({
     handleRatingCheckboxChange
 }) => {
 
+    const sortedBrands = brands.slice().sort((a,b) => a[0].localeCompare(b[0]))
     function generateAdjustedPrices(prices) {
         if (prices.length === 0) {
             return [];
@@ -38,7 +40,7 @@ export const Filters = ({
             <div className="filter-group">
                 <h5>Brand</h5>
                 <ul>
-                    {brands.map((brand, i) =>
+                    {sortedBrands.map((brand, i) =>
                         <li className="form-check" key={i}>
                             <input type="checkbox"
                                 name={brand[0]}

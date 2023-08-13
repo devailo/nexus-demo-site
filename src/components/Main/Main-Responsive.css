@@ -1,0 +1,13 @@
+@media (max-width: 1024px) {
+
+    .filter-container{
+    position: relative;
+    top: 0;
+
+    }
+
+    .main-container{
+        width:auto;
+        flex-direction: column;
+    }
+}

@@ -23,6 +23,8 @@
     height: 50px;
 }
 
+
+
 .buttons button {
     all: unset;
     cursor: pointer;
@@ -38,4 +40,14 @@
     margin: 0 10px;
     transition: 0.25s ease-out;
 
+}
+
+#checkbox_toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
 }

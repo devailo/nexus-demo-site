@@ -1,4 +1,6 @@
 import "./Main.css"
+import "./Main-Responsive.css"
+
 
 import { useState } from "react"
 
@@ -71,7 +73,7 @@ export const Main = ({ allCategories, activeCategory }) => {
     const filteredProducts = products.filter(filterProducts)
 
     // show more functionality
-    const defaultProductsShown = 4
+    const defaultProductsShown = 8
 
     const [shownProducts, setLoadMore] = useState(defaultProductsShown)
 

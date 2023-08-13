@@ -89,13 +89,143 @@
             "price": 1269,
             "discounted": true,
             "rating": 4.2
+          },
+          {
+            "_id": "10",
+            "imageUrl": "https://www.technopolis.bg/medias/sys_master/h60/h10/11459448406046.jpg",
+            "brand": "Toshiba",
+            "model": "Satellite Pro C50",
+            "description": "Intel Core i5, GeForce MX350, 512GB SSD",
+            "price": 1200,
+            "discounted": false,
+            "rating": 4.5
+          },
+          {
+            "_id": "11",
+            "imageUrl": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08277657.png",
+            "brand": "HP",
+            "model": "Pavilion 15",
+            "description": "Intel Core i7, GTX 1650, 256GB SSD",
+            "price": 1300,
+            "discounted": true,
+            "rating": 4.2
+          },
+          {
+            "_id": "12",
+            "imageUrl": "https://digit.bg/image/cache/catalog/product/gallery1/acer-aspire-7-nh.qbfex.006-0006303701142-473x473.jpg",
+            "brand": "Acer",
+            "model": "Aspire 5",
+            "description": "Intel Core i5, NVIDIA MX250, 512GB SSD",
+            "price": 1100,
+            "discounted": true,
+            "rating": 4.3
+          },
+          {
+            "_id": "13",
+            "imageUrl": "https://s3-hc-files-prod.s3.amazonaws.com/wp-content/uploads/2022/03/MYDC2LL-A-1.jpg",
+            "brand": "Apple",
+            "model": "MacBook Air",
+            "description": "Apple M1, 256GB SSD",
+            "price": 1300,
+            "discounted": false,
+            "rating": 4.7
+          },
+          {
+            "_id": "14",
+            "imageUrl": "https://laptop.bg/system/images/396758/original/asus_zenbook_14_um3402yarkp511w.jpg",
+            "brand": "ASUS",
+            "model": "VivoBook 15",
+            "description": "AMD Ryzen 7, Radeon Vega 10, 1TB SSD",
+            "price": 1250,
+            "discounted": true,
+            "rating": 4.6
+          },
+          {
+            "_id": "15",
+            "imageUrl": "https://p1.akcdn.net/full/839959281.lenovo-thinkpad-x1-carbon-20xw007xbm.jpg",
+            "brand": "Lenovo",
+            "model": "IdeaPad Flex 5",
+            "description": "Intel Core i3, Intel UHD Graphics, 128GB SSD",
+            "price": 800,
+            "discounted": false,
+            "rating": 3.9
+          },
+          {
+            "_id": "16",
+            "imageUrl": "https://www.technopolis.bg/medias/sys_master/h49/hf1/11122949652510.jpg",
+            "brand": "MSI",
+            "model": "GF65 Thin",
+            "description": "Intel Core i7, RTX 3060, 512GB SSD",
+            "price": 1500,
+            "discounted": true,
+            "rating": 4.5
+          },
+          {
+            "_id": "17",
+            "imageUrl": "https://ardes.bg/uploads/original/dell-xps-13-9300-271941.jpg",
+            "brand": "Dell",
+            "model": "XPS 13",
+            "description": "Intel Core i7, Intel Iris Xe Graphics, 512GB SSD",
+            "price": 1700,
+            "discounted": false,
+            "rating": 4.8
+          },
+          {
+            "_id": "18",
+            "imageUrl": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08277657.png",
+            "brand": "HP",
+            "model": "Envy x360",
+            "description": "AMD Ryzen 5, Radeon Vega 8, 256GB SSD",
+            "price": 1100,
+            "discounted": true,
+            "rating": 4.4
+          },
+          {
+            "_id": "19",
+            "imageUrl": "https://digit.bg/image/cache/catalog/product/gallery1/acer-aspire-7-nh.qbfex.006-0006303701142-473x473.jpg",
+            "brand": "Acer",
+            "model": "Swift 3",
+            "description": "Intel Core i5, Intel Iris Xe Graphics, 512GB SSD",
+            "price": 1150,
+            "discounted": false,
+            "rating": 4.1
+          },
+          {
+            "_id": "20",
+            "imageUrl": "https://m.media-amazon.com/images/I/71rr6feS+uL._AC_UF894,1000_QL80_.jpg",
+            "brand": "Samsung",
+            "model": "Galaxy Book Flex",
+            "description": "Intel Core i7, Intel Iris Plus Graphics, 512GB SSD",
+            "price": 1400,
+            "discounted": true,
+            "rating": 4.7
+          },
+          {
+            "_id": "21",
+            "imageUrl": "https://p1.akcdn.net/full/839959281.lenovo-thinkpad-x1-carbon-20xw007xbm.jpg",
+            "brand": "Lenovo",
+            "model": "ThinkPad X1 Carbon",
+            "description": "Intel Core i5, Intel UHD Graphics, 512GB SSD",
+            "price": 1600,
+            "discounted": true,
+            "rating": 4.8
+          },
+          {
+            "_id": "22",
+            "imageUrl": "https://ardes.bg/uploads/original/dell-xps-13-9300-271941.jpg",
+            "brand": "Dell",
+            "model": "Inspiron 14",
+            "description": "AMD Ryzen 5, Radeon Vega 8, 512GB SSD",
+            "price": 950,
+            "discounted": false,
+            "rating": 4.0
           }
     ],
     "phones": [
         {
             "_id": "1",
             "imageUrl": "https://cdn.dxomark.com/wp-content/uploads/medias/post-75482/SamsungGalaxys215gplus.jpg",
-            "brand": "samsung",
+            "brand": "Samsung",
             "model": "S21+",
             "description": "UHD, 8gb Ram, 5000 mAh",
             "discounted": false,
@@ -105,12 +235,42 @@
         {
           "_id": "2",
           "imageUrl": "https://cdn.dxomark.com/wp-content/uploads/medias/post-75482/SamsungGalaxys215gplus.jpg",
-          "brand": "samsung",
+          "brand": "Samsung",
           "model": "S21",
           "description": "UHD, 6gb Ram, 5000 mAh",
           "discounted": false,
           "price": 1800,
           "rating": 4
+      },
+      {
+        "_id": "3",
+        "imageUrl": "https://cdn.dxomark.com/wp-content/uploads/medias/post-75482/SamsungGalaxys215gplus.jpg",
+        "brand": "Samsung",
+        "model": "Galaxy S21",
+        "description": "Snapdragon 888, 128GB Storage",
+        "price": 1000,
+        "discounted": false,
+        "rating": 4.7
+      },
+      {
+        "_id": "4",
+        "imageUrl": "https://technome.bg/image/cache/catalog/pc-import/0006301637053/0006302249630/00063037853451-446x446.jpg",
+        "brand": "Apple",
+        "model": "iPhone 13",
+        "description": "Apple A15 Bionic, 256GB Storage",
+        "price": 1100,
+        "discounted": false,
+        "rating": 4.8
+      },
+      {
+        "_id": "5",
+        "imageUrl": "https://www.mobilepoint.bg/wp-content/uploads/2023/02/google-pixel-6-128gb-8gb-ram-sorta-seafoam-4.jpg",
+        "brand": "Google",
+        "model": "Pixel 6",
+        "description": "Snapdragon 870, 128GB Storage",
+        "price": 900,
+        "discounted": true,
+        "rating": 4.5
       }
     ],
     "tablets": [

@@ -1,0 +1,22 @@
+@media (max-width: 1700px){
+
+    .card{
+        width:29%
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .content-container {
+        width: auto;
+    }
+
+    .content-header {
+        height: auto;
+    }
+
+    .card{
+        width:45%
+    }
+}
+

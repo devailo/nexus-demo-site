@@ -1,4 +1,5 @@
 import "./Content.css"
+import "./Content-responsive.css"
 
 export const Content = ({ products, filteredProducts, shownNumber, shownProducts, categoryName, onSortChange }) => {
 
@@ -10,7 +11,10 @@ export const Content = ({ products, filteredProducts, shownNumber, shownProducts
     return (
         <div className="content-header">
             <p className="counter">{shownNumber ? shownProducts : filteredProducts.length} of {products.length} products</p>
-            <p>Take a look of our selection of {categoryName}</p>
+            <div className="category-name">
+                <p>Take a look of our selection of</p>
+                <h2> {categoryName}</h2>
+            </div>
             <div className="sort-container">
                 <label htmlFor="sortOptions">Sort by:</label>
                 <select id="sortOptions" onChange={handleOptionChange}>

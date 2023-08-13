@@ -7,23 +7,25 @@ export const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-logo">
-                <img src={Logo} alt="nexus logo" />
+                <a href="/">
+                    <img src={Logo} alt="nexus logo" />
+                </a>
 
             </div>
             <div className="footer-links">
                 <div className="footer-column">
                     <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/">Laptops</Link></li>
-                        <li><Link to="/phones">Phones</Link></li>
-                        <li><Link to="/tablets">Tablets</Link></li>
+                        <li><Link to="#">About us</Link></li>
+                        <li><Link to="#">FAQ</Link></li>
+                        <li><Link to="#">Deliveries</Link></li>
+                        <li><Link to="#">Warranties</Link></li>
                     </ul>
                 </div>
                 <div className="footer-column">
                     <ul>
-                        <li><Link to="#">About us</Link></li>
-                        <li><Link to="#">FAQ</Link></li>
                         <li><Link to="#">Terms and conditions</Link></li>
+                        <li><Link to="#">GDPR</Link></li>
+                        <li><Link to="#">Become a partner</Link></li>
                         <li><Link to="#">Contact</Link></li>
                     </ul>
                 </div>

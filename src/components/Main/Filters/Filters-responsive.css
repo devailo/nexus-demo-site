@@ -1,0 +1,25 @@
+@media (max-width: 1024px) {
+
+    .filter-container{
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    .filter-content{
+        margin-bottom: 16px;
+        flex-direction: row;
+    }
+
+    .filter-group{
+        margin-top: 16px;
+    }
+
+    .filter-group ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form-check{
+        margin-right: 12px;
+    }
+}
