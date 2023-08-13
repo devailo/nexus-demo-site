@@ -3,7 +3,7 @@
 ## About
 This project is created as a technical task for a job application in 10 days. 
 
-The web Page is also deployed with firebase for the react part and with render.com for the server. It is live and working: [Here](https://painter-website.web.app/)
+The web Page is also deployed with firebase for the react part and with render.com for the server. It is live and working: [Here](https://nexus-demo-site.web.app/)
 
 ![Project Dashboard](https://i.imgur.com/8dNTqC1.jpg)
 
