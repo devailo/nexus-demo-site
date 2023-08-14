@@ -189,6 +189,19 @@
     .popup{
         max-width: 90%;
     }
+
+    .card-info{
+        margin-top: 0;
+    }
+
+    .card-info-text>h2 {
+        font-size: 14px;
+        
+    }
+
+    .card-info-text>p {
+       font-size: 14px;
+    }
 }
 
 
