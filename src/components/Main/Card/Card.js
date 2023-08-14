@@ -64,7 +64,7 @@ export const Card = ({
                 <div id="page-mask">
 
                     <div className="popup">
-                        <p>Product added to cart!</p>
+                        <p>{brand} {model} added to cart!</p>
                         <span className="pop-button" onClick={() => setIsOpen(false)}>OK</span>
                     </div>
                 </div>

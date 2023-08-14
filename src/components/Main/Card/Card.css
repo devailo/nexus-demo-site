@@ -185,6 +185,13 @@
     
 }
 
+@media (max-width: 1024px) {
+    .popup{
+        max-width: 90%;
+    }
+}
+
+
 .popup p {
     font-size: 24px;
 }
